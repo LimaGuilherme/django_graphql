@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'graphene_django',
-    'apps.users'
+    'apps.users',
+    'apps.decks',
+    'apps.cards'
 ]
 
 
@@ -135,5 +137,5 @@ STATIC_URL = '/static/'
 AUTH_USER_MODEL = 'users.User'
 
 GRAPHENE = {
-    'SCHEMA': 'apps.schema.schema'
+    'SCHEMA': 'apps.schema.schema.schema'
 }
